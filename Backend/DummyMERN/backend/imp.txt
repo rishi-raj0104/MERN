@@ -1,0 +1,18 @@
+->mongodb login
+->top-left ->dropdown ->new project
+-> enter project name and create project
+->build database click
+->click create
+->save username?password ->click create
+->click finsih and close
+-> click connect
+->click compass
+->copy connection string and replace <password> with the password you saved before
+
+//
+rishirishiraj18
+m5HfmeBrD2t13jvW
+mongodb://rishirishiraj18:<password>@undefined/?replicaSet=atlas-12do37-shard-0&ssl=true&authSource=admin
+//
+npm i
+npm run dev

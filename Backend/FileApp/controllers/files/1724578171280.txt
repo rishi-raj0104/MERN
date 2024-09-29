@@ -1,0 +1,13 @@
+npm i express
+npm i nodemon
+add this in package.js
+  "scripts": {
+    "start":"node index.js",
+    "dev": "nodemon index.js"
+  },
+
+npm i cookie-parser
+npm i dotenv
+
+npm i bcrypt
+npm i jsonwebtoken

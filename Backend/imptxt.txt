@@ -1,0 +1,22 @@
+// step1 - create folder
+// step2 - move into that folder
+// step3 - npm init -y
+// step4 - open folder using vscode
+// step5 - npm i express
+// step6 - create server.js
+
+//to start --- node server.js
+//npm i mongoose
+// npm install dotenv
+
+//nodemon npm i nodemon
+//"scripts": {
+//    "start": "node index.js",
+//    "test": "echo \"Error: no test specified\" && exit 1",
+//    "dev": "nodemon index.js"
+//  },
+//Navigate to the Headers tab.
+//Ensure you have the following header:
+//Key: Content-Type
+//Value: application/json
+//

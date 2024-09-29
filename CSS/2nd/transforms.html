@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2d Transforms</title>
+
+    <style>
+        .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+        display: block;
+        font-weight: 900;
+        box-sizing: border-box;
+        margin: 40px;
+        background-color: aqua;
+        }
+
+        #translate {
+        transform: translateX(74px);
+        transform: translateY(50px);
+        transform: translate(74px, 50px);
+        }
+
+        #rotate {
+        transform: rotateX(50deg);
+        transform: rotateY(40deg);
+        transform: rotate(50deg);
+        }
+
+        #scale {
+        transform: scaleX(2);
+        transform: scaleY(3);
+        transform: scale(2, 1);
+        }
+
+        #skew {
+        transform: skewX(10deg);
+        transform: skewY(50deg);
+        transform: skew(40deg);
+        }
+
+        #matrix{
+        transform: matrix(2,2,2,0,10,20);
+        /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>2D Transforms</h1>
+    <div class="box" id="translate">A</div>
+    <br>
+    <div class="box"id="rotate">B</div>
+    <br>
+    <div class="box"id="scale" >C</div>
+    <br>
+    <div class="box"id="skew" >D</div>
+    <br>
+    <div class="box"id="matrix" >E</div>
+    
+  </body>
+</html>

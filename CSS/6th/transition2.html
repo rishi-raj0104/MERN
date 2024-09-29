@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            height:500px;
+            width: 500px;
+            background-color: green;
+            border:3px solid red;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            margin:20px;
+            border: 2px solid orange;
+            background-color: aqua;
+            /*transition:1s;*/
+            /*transition-property: all;*/
+            /*transition-property: background-color;
+            transition-delay: 4s;*/
+            /*transition: upon duration type delay*/
+            /*transition: background-color 1s ease 3s;*/
+            /*transition: background-color 1s ease;*/
+            /*transition: all 1s ease 1s;*/
+            /*transition: background-color 1s ease;
+            transition: background-color 1s ease-in;
+            transition: background-color 1s ease-in-out;
+            transition: background-color 1s ease-out;
+            transition: transform 3s cubic-bezier(0,1.47.0.1,68);
+            transition: 3s cubic-bezier(0,1.47.0.1,68); by default it is all*/
+            transition: transform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0,1.47.0.1,68);
+            transition-delay: 1s;
+        }
+        .box:hover{
+            background-color: red;
+            /*transform: rotate(45deg);*/
+            transform: translateX(500px) rotate(360deg);;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            background-color: aqua;
+            height: 500px;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 30px 1fr 30px;
+            gap:5px;
+        }
+        .box{
+            background-color: red;
+            border: 1px solid lightgreen;
+            /*width: 80px;
+            height: 80px;
+            */
+        }
+        #bx1,#bx4{
+            grid-column-start:1;
+            grid-column-end:5;
+        }
+        #bx3,#bx2,#bx5{
+            grid-row-start: 2;
+            grid-row-end:4 ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Grid</h1>
+    <div class="container">
+        <div class="box" id="bx1">Box1</div>
+        <div class="box"id="bx2">Box2</div>
+        <div class="box"id="bx3">Box3</div>
+        <div class="box"id="bx5">Box5</div>
+        <div class="box"id="bx4">Box4</div>
+        <!-- <div class="box"id="bx6">Box6</div> -->
+    </div>
+</body>
+</html>
